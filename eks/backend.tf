@@ -10,8 +10,8 @@ terraform {
     bucket         = "my-eks-tera-buckete-00123-git-hub"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
-    #dynamodb_table = "Lock-Files"
-    #encrypt        = true
+    dynamodb_table = "terraform-lock"
+    encrypt        = true
   }
 }
 
